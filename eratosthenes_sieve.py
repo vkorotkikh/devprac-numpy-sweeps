@@ -18,10 +18,8 @@ def main():
 
 
 def m_sieve():
-
 	is_prime 		= np.ones((100,), dtype=bool)
 	is_prime[:2] 	= 0
-
 	n_max	= int(np.sqrt(len(is_prime)))
 
 	for j in range(2, n_max):
@@ -31,6 +29,7 @@ def m_sieve():
 	primes	= np.nonzero(is_prime)
 	for i in range(0, len(primes)):
 		print(primes[i])
+
 
 if __name__ == "__main__":
 	main()
